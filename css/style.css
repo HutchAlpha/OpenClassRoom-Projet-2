@@ -15,6 +15,7 @@ body {
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
+    margin: 0px;
 }
 
 @media (max-width: 768px){
@@ -67,7 +68,7 @@ a {
 
     .divLogo{
         width: 161px;
-        display: flex;
+        align-content: center;
         justify-content: center;
         align-items: center;
     }
@@ -90,9 +91,10 @@ a {
         justify-content: space-around;
         align-items: end;
     }
-    .EffetA:hover{
+    .EffetA:hover {
         color: #0065FC;
-        border-top: 2px solid #0065FC;
+        padding-top: 15px;
+        border-top: 5px solid #0065FC;
     }
 
     @media (max-width: 768px){
@@ -101,7 +103,9 @@ a {
             }
 
             .divLogo{
+                display: flex;
                 width: 100%;
+                height: 79px;
             }
 
             .menu{
@@ -125,6 +129,10 @@ a {
     display: flex;
 }
 
+.pClass{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 .logoRecherche {
     background-color: #f0f0f0; 
@@ -454,6 +462,10 @@ a {
 
 /*!Populaire*/
 
+.sectionActivite{
+    padding: 30px;
+}
+
 .activite {
     display: flex;
     justify-content: space-evenly;
@@ -464,7 +476,7 @@ a {
 .classActivite {
     display: flex;
     flex-direction: column; 
-    width: 297px;
+    width: 297.5px;
     height: 439px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -474,7 +486,7 @@ a {
 }
 
 .imgActivite {
-    width: 297px;
+    width: 297.5px;
     height: 380px;
     object-fit: cover;
     display: block;
