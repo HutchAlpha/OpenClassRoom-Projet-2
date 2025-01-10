@@ -15,6 +15,7 @@ body {
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
+    margin: 0px;
 }
 
 @media (max-width: 768px){
@@ -67,7 +68,7 @@ a {
 
     .divLogo{
         width: 161px;
-        display: flex;
+        align-content: center;
         justify-content: center;
         align-items: center;
     }
@@ -90,18 +91,22 @@ a {
         justify-content: space-around;
         align-items: end;
     }
-    .EffetA:hover{
+    .EffetA:hover {
         color: #0065FC;
-        border-top: 2px solid #0065FC;
+        padding-top: 15px;
+        border-top: 5px solid #0065FC;
     }
 
     @media (max-width: 768px){
         header{
             flex-direction: column;
+            height: 115px;
             }
 
             .divLogo{
+                display: flex;
                 width: 100%;
+                height: 79px;
             }
 
             .menu{
@@ -111,11 +116,19 @@ a {
             nav{
                 border-bottom: 2px solid #F2F2F2;
             }
-
+            
             .EffetA:hover{
                 color: #0065FC;
                 border-top: 0px;
-                border-bottom: 2px solid #0065FC;
+                border-bottom: solid #0065FC;
+                padding-bottom: 20px;
+                margin-top: -20px;
+            }
+
+            nav{
+                height: 36px;
+                display: flex;
+                align-items: flex-start;
             }
     }
 /*!Fin Header*/
@@ -125,6 +138,10 @@ a {
     display: flex;
 }
 
+.pClass{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 .logoRecherche {
     background-color: #f0f0f0; 
@@ -143,6 +160,11 @@ a {
     font-weight: bold; 
 }
 
+.recherche-bar::placeholder {
+    color: black;
+    font-size: 18px;
+}
+  
 .buttonRechercher {
     background-color: #0065FC;
     border: none;
@@ -208,6 +230,10 @@ a {
     }
 }
 @media (max-width: 768px){
+    .SectRecherche{
+        padding: 0 20px 0 20px;
+    }
+
     .BarreRecherche{
         justify-content: center;
     }
@@ -219,7 +245,8 @@ a {
         display:block;
     }
     .blockFiltre{
-    margin: 5px;
+        width: 162.5px;
+        margin: 2px;
     }
 }
 /*!Fin Section*/
@@ -398,7 +425,6 @@ a {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -408,6 +434,7 @@ a {
         width: 250px;
     }
     .populaires-cards {
+        display: flex;
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
@@ -432,7 +459,6 @@ a {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -454,6 +480,10 @@ a {
 
 /*!Populaire*/
 
+.sectionActivite{
+    padding: 30px;
+}
+
 .activite {
     display: flex;
     justify-content: space-evenly;
@@ -464,7 +494,7 @@ a {
 .classActivite {
     display: flex;
     flex-direction: column; 
-    width: 297px;
+    width: 297.5px;
     height: 439px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -474,7 +504,7 @@ a {
 }
 
 .imgActivite {
-    width: 297px;
+    width: 297.5px;
     height: 380px;
     object-fit: cover;
     display: block;
@@ -490,6 +520,24 @@ a {
     margin: 0;
     color: #333;
 }
+@media (min-width: 1800px){
+    .classActivite {
+        width: 297px;
+        height: 439px;
+    }
+}
+
+@media (max-width: 1024px){
+    .classActivite {
+        width: 193.5px;
+        height: 270px;
+    }
+
+    .imgActivite {
+        width: 100%;
+        height: 200px;
+    }
+}
 
 @media (max-width: 768px){
     .activite {
@@ -501,11 +549,11 @@ a {
     }
 
     .imgActivite {
-        width: 100%;
         height: 141px;
     }
+
     .classActivite {
-    width: 90%;
+    width: 100%;
     height: auto;    
     flex-direction: column;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -514,12 +562,7 @@ a {
     }
 }
 
-@media (min-width: 1800px){
-    .classActivite {
-        width: 297px;
-        height: 439px;
-    }
-}
+
 /*!Fin Populaire*/
 
 /*!FOOTER*/
