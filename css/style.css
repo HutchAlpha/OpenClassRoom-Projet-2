@@ -230,6 +230,10 @@ a {
     width: 100%;
     align-items: center;
 }
+
+.pInfoClass{
+    margin-left: 5px ;
+}
 @media (max-width: 1024px){
     .menuFiltre{
         flex-direction: column;
@@ -293,6 +297,7 @@ a {
     
     .section-title {
         margin: 0;
+        padding: 0 0 15px 0;
         font-size: 22px;
     }
     
