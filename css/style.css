@@ -25,7 +25,12 @@ body {
         padding-right: 0px;
     }
 }
-
+@media (max-width: 1024px){
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
 @media (min-width: 1800px){
     body {
         padding-left: 230px;
@@ -366,7 +371,7 @@ a {
             border-radius: 20px;
             background-color: #FFFFFF;
             width: 30%;
-            height: 207px;
+            
             margin-bottom: 20px;
         }
 
@@ -380,7 +385,6 @@ a {
 
         .contenueH{
             width: 90%;
-            height: 64px;
             padding: 0 10px 0 10px;
         }
 
@@ -524,9 +528,10 @@ a {
 
 .activite {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     margin: 20px auto;
+    gap: 5px;
 }
 
 .classActivite {
@@ -566,6 +571,7 @@ a {
 }
 
 @media (max-width: 1024px){
+
     .classActivite {
         width: 193.5px;
         height: 270px;
